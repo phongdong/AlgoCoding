@@ -1,7 +1,5 @@
 package com.bst;
 
-import java.awt.MenuComponent;
-import java.lang.reflect.Array;
 import java.security.KeyStore.Entry;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -14,13 +12,9 @@ import java.util.Queue;
 import java.util.Set;
 import java.util.Stack;
 
-import javax.imageio.ImageTypeSpecifier;
-import javax.management.MXBean;
+import java.util.Map.*;
 
-import org.omg.PortableInterceptor.IORInterceptor;
-import org.w3c.dom.ls.LSInput;
-
-public class TheDifference {
+public class Difference {
 	public class Node {
 		int key;
 		Node left;
@@ -34,7 +28,7 @@ public class TheDifference {
 	}
 
 	public static void main(String[] args) {
-		// System.out.println(findTheDifference2("abcd", "abcde"));
+		 //System.out.println(findTheDifference2("abcd", "abcde"));
 		// System.out.println(findTheDifference2("a", "aa"));
 		// System.out.println(findTheDifference2("abcd", "abcde"));
 		// System.out.println(findTheDifference2("a", "aa"));
@@ -44,6 +38,7 @@ public class TheDifference {
 		// String t =
 		// "qhxepbshlrhoecdaodgpousbzfcqjxulatciapuftffahhlmxbufgjuxstfjvljybfxnenlacmjqoymvamphpxnolwijwcecgwbcjhgdybfffwoygikvoecdggplfohemfypxfsvdrseyhmvkoovxhdvoavsqqbrsqrkqhbtmgwaurgisloqjixfwfvwtszcxwktkwesaxsmhsvlitegrlzkvfqoiiwxbzskzoewbkxtphapavbyvhzvgrrfriddnsrftfowhdanvhjvurhljmpxvpddxmzfgwwpkjrfgqptrmumoemhfpojnxzwlrxkcafvbhlwrapubhveattfifsmiounhqusvhywnxhwrgamgnesxmzliyzisqrwvkiyderyotxhwspqrrkeczjysfujvovsfcfouykcqyjoobfdgnlswfzjmyucaxuaslzwfnetekymrwbvponiaojdqnbmboldvvitamntwnyaeppjaohwkrisrlrgwcjqqgxeqerjrbapfzurcwxhcwzugcgnirkkrxdthtbmdqgvqxilllrsbwjhwqszrjtzyetwubdrlyakzxcveufvhqugyawvkivwonvmrgnchkzdysngqdibhkyboyftxcvvjoggecjsajbuqkjjxfvynrjsnvtfvgpgveycxidhhfauvjovmnbqgoxsafknluyimkczykwdgvqwlvvgdmufxdypwnajkncoynqticfetcdafvtqszuwfmrdggifokwmkgzuxnhncmnsstffqpqbplypapctctfhqpihavligbrutxmmygiyaklqtakdidvnvrjfteazeqmbgklrgrorudayokxptswwkcircwuhcavhdparjfkjypkyxhbgwxbkvpvrtzjaetahmxevmkhdfyidhrdeejapfbafwmdqjqszwnwzgclitdhlnkaiyldwkwwzvhyorgbysyjbxsspnjdewjxbhpsvj";
 		// System.out.println(findTheDifference3(s, t));
+
 		// findKsmallestUnsortedArray() ;
 		// int[] nums = {7, 15, 4, 3, 20, 10};
 		// partition(nums, 0, 5);
@@ -64,9 +59,13 @@ public class TheDifference {
 		// System.out.println(c.equals(e)); // F => T
 
 		/*
-		 * int[] nums = {12, 3, 5, 7, 4, 19, 26}; System.out.println(kthSmallest(nums,
-		 * 0, 6, 3)); int a1[] = {1, 4, 5, 7}; int a2[] = {10, 20, 30, 40}; int a3[] =
-		 * {1, 4, 5, 7, 10, 20, 30, 40}; int x = 36; closetPairs(a1, a2, x);
+		 * int[] nums = {12, 3, 5, 7, 4, 19, 26}; 
+		 * System.out.println(kthSmallest(nums, 0, 6, 3)); 
+		 * int a1[] = {1, 4, 5, 7}; 
+		 * int a2[] = {10, 20, 30, 40}; 
+		 * int a3[] = {1, 4, 5, 7, 10, 20, 30, 40}; 
+		 * int x = 36; 
+		 * closetPairs(a1, a2, x);
 		 * findClosest(a3, x); findPairs(a1, a2, 4, 4, x);
 		 */
 
@@ -102,6 +101,54 @@ public class TheDifference {
 		 * System.out.println(countPairs(sortedArray, 10));
 		 */
 		
+		
+		
+		/*
+		int[] adjacents = {2, 1, 1, 3, 3, 2, 2, 2, 2, 1, 1};
+		getMostAdjacents(adjacents);
+		*/
+
+		
+
+		String str = "abppplee";
+		List<String> list = Arrays.asList("able", "ale", "apple", "bale", "kangaroo");
+		//System.out.println(list.get(0));
+		longestSubString(str, list);
+
+		
+		//String string = "abcabcbb";
+		//String string = "pwwkew";
+		/*
+		
+		*/
+		/*
+		int nums[] = {1, 4, 5, 7, 10, 20, 30, 40}; 
+		findPairsX(nums, 36);
+		*/
+		
+		/*
+		int[] nums = {12, 3, 5, 7, 4, 19, 10};
+		
+		System.out.println(partition2(nums, 0, 6));
+		System.out.println(Arrays.toString(nums));
+		*/
+		/*
+		int[] nums = {2,5,6,0,0,1,2};
+		System.out.println(findPivot(nums, 0, 6));
+		*/
+		/*
+		int i; for (i = 0; i < 10; i++) {} int x = i;
+		System.out.println(x);
+		*/	
+		//int[] a = {1,2,3,2,4,5,6};
+		//int[] a = {1,2,3,4,5,6,7,8};
+		//int[] a = {5, 6, 7, 8, 9, 10, 11, 12,13};
+		
+		//System.out.println(findPivot(a, 0, a.length-1));
+		
+		//int[] a = {1,4,5,7,10,20,30,40};
+		//findPairsX2(a, 36);
+		
 		/*
 		ArrayList<Integer> flowerPot = new ArrayList<Integer>();
 		flowerPot.add(0);
@@ -123,25 +170,191 @@ public class TheDifference {
 		System.out.println();
 		for (Integer integer : flowerPot) {
 			System.out.print(integer + " ");
-		}*/
-		
-		/*
-		int[] adjacents = {2, 1, 1, 3, 3, 2, 2, 2, 2, 1, 1};
-		getMostAdjacents(adjacents);
+		}
 		*/
+//		String string = "abcabcbb";
+		//longestSubStringWithoutRepeating4("abcabcbb");
+//		longestSubStr(string);
+//		System.out.println((int)string.charAt(1));
 		
-		/*
-		String str = "abppplee";
-		List<String> list = Arrays.asList("able", "ale", "apple", "bale", "kangaroo");
-		//System.out.println(list.get(0));
-		longestSubString(str, list);
-		*/
-		
-		//String string = "abcabcbb";
-		//String string = "pwwkew";
-		String string = "abcabcbb";
-		longestSubStringWithoutRepeating4("abcabcbb");
+//		
+		//System.out.println(118&15);
 	}
+	
+	
+	
+	
+	static void longestSubStr(String str) {
+		HashMap<Character, Integer> tmp = new HashMap<>();
+		HashMap<String, Integer> hashMap = new HashMap<>();
+		int l = 0, r = str.length() -1;
+		int i = 0;
+		while (l < r) {
+			if (!tmp.containsKey(str.charAt(l))) {
+				tmp.put(str.charAt(l), l++);
+			} else {
+				int startIndex = i < tmp.get(str.charAt(l)) ? i : tmp.get(str.charAt(l));
+				hashMap.put(str.substring(startIndex, l), startIndex);
+				tmp.clear();
+				l = startIndex + 1;
+				i = startIndex + 1;
+			}
+		}
+		hashMap.put(str.substring(i, r), i);
+		hashMap.hashCode();
+		//System.out.println(i);
+		
+		for (java.util.Map.Entry<String, Integer> entry : hashMap.entrySet()) {
+			System.out.printf("%s : %d\n", entry.getKey(), entry.getValue());
+		}
+	}
+	/*
+	static void longestSubStringWithoutRepeating4(String str) { 
+		HashMap<Character, Integer> tmp = new HashMap<>();
+		HashMap<String, Integer> hashMap = new HashMap<>();
+		int index = 0;
+		
+		int i;
+		int j = 0;
+		for (i = 0; i < str.length(); ) {
+			if (!tmp.containsKey(str.charAt(i))) {
+				tmp.put(str.charAt(i), i++);
+			} else {
+				index = j < tmp.get(str.charAt(i)) ? j : tmp.get(str.charAt(i));
+				hashMap.put(str.substring(index, i), index);
+				tmp.clear();
+				i = index + 1;
+				j = index + 1;
+			}
+		}
+		hashMap.put(str.substring(j, i), j);
+		
+		for (java.util.Map.Entry<String, Integer> entry: hashMap.entrySet()) {
+			
+			System.out.printf("%s : %d\n", entry.getKey(), entry.getValue());
+		}
+		
+	}*/
+	
+	static void longestSubStringWithoutRepeating(String str) {
+		Map<Character, Integer> map = new HashMap<>();
+		Map<String, Integer> hmMap = new HashMap<>();
+		
+		int lastIndex = 0;
+		for (int i = 0; i < str.length();) {
+			if (!map.containsKey(str.charAt(i))) {
+				map.put(str.charAt(i), i);
+				i++;
+			} else {
+				int beginIndex = lastIndex < map.get(str.charAt(i)) ? lastIndex : map.get(str.charAt(i));
+				
+				hmMap.put(str.substring(beginIndex, i), beginIndex);
+				map.clear();
+				i = beginIndex + 1;
+			}
+		}
+		
+		for (java.util.Map.Entry<String, Integer> entry: hmMap.entrySet()) {
+			//max = Math.max(max, entry.getKey().length());
+			
+			System.out.printf("%s : %d\n", entry.getKey(), entry.getValue());
+		}
+		//return max;
+	}
+	
+	
+	/*
+	 * Search an element in a sorted and rotated array
+	 *
+	 */
+	public static int searchSortedRotated(int[] a, int n, int x) {
+		int pivot = findPivot(a, 0, n - 1);
+		if (pivot == -1)
+			biSearchIter(a, 0, n - 1, x);
+		if (a[pivot] == x)
+			return pivot;
+		if (a[0] <= x)
+			return biSearchIter(a, 0, pivot - 1, x);
+		return biSearchIter(a, pivot + 1, n - 1, x);
+	}
+	
+	static int findPivot(int arr[], int low, int high)
+    {
+       // base cases
+       if (high < low)  
+            return -1;
+       if (high == low) 
+            return low;
+        
+       /* low + (high - low)/2; */
+       int mid = (low + high)/2;   
+       if (mid < high && arr[mid] > arr[mid + 1])
+           return mid;
+       if (mid > low && arr[mid] < arr[mid - 1])
+           return (mid-1);
+       if (arr[low] >= arr[mid])
+           return findPivot(arr, low, mid-1);
+       return findPivot(arr, mid + 1, high);
+    }
+	/*
+	public static int findPivot(int[] a, int l, int r) {
+		if (r < l)
+			return -1;
+		if (l == r)
+			return l;
+		int mid = (l + r) / 2;
+		if (mid < r && a[mid] > a[mid + 1])
+			return mid;
+		if (mid > l && a[mid - 1] > a[mid])
+			return mid - 1;
+
+		if (a[l] >= a[mid])
+			return findPivot(a, l, mid - 1);
+
+		return findPivot(a, mid + 1, r);
+	}
+	*/
+	
+	
+	static int partition2(int[] a, int l, int r) {
+		int pivot = a[r];
+		int i = l;
+		
+		for (int j = l; j < r; j++) {
+			if(a[j] <= pivot) {
+				int tmp = a[j];
+				a[j] = a[i];
+				a[i++] = tmp;
+			}
+		}
+		
+		int tmp = a[r];
+		a[r]= a[i];
+		a[i] = tmp;
+		
+		return i;
+	}
+	
+	static void findPairsX(int[] a, int x) {
+		int l = 0;
+		int r = a.length - 1;
+		int i = 0, j = 0, diff = Integer.MAX_VALUE;
+		
+		while (l < r) {
+			if (diff > Math.abs(a[l] + a[r] - x)) {
+				diff = Math.abs(a[l] + a[r] - x);
+				i = l;
+				j = r;
+			}
+			if (a[l] + a[r] > x) 
+				r--;
+			else 
+				l++;
+		}
+		System.out.println(a[i] + " : " + a[j]);
+		
+	}
+	
 	
 	static void longestSubStringWithoutRepeating4(String str) { 
 		HashMap<Character, Integer> tmp = new HashMap<>();
@@ -186,31 +399,6 @@ public class TheDifference {
 	
 	
 	
-	static void longestSubStringWithoutRepeating(String str) {
-		Map<Character, Integer> map = new HashMap<>();
-		Map<String, Integer> hmMap = new HashMap<>();
-		
-		int lastIndex = 0;
-		for (int i = 0; i < str.length();) {
-			if (!map.containsKey(str.charAt(i))) {
-				map.put(str.charAt(i), i);
-				i++;
-			} else {
-				int beginIndex = lastIndex < map.get(str.charAt(i)) ? lastIndex: map.get(str.charAt(i));
-				
-				hmMap.put(str.substring(beginIndex, i), beginIndex);
-				map.clear();
-				i = beginIndex + 1;
-			}
-		}
-		
-		for (java.util.Map.Entry<String, Integer> entry: hmMap.entrySet()) {
-			//max = Math.max(max, entry.getKey().length());
-			
-			System.out.printf("%s : %d\n", entry.getKey(), entry.getValue());
-		}
-		//return max;
-	}
 	
 	static int longestSubStringWithoutRepeating2(String str) {
 		int n = str.length();
@@ -313,21 +501,22 @@ public class TheDifference {
 
 		for (int i = 0; i < list.size(); i++) {
 			if (i == 0 || i == n) {
-				if (i == 0 && list.get(i) == 0 && list.get(i + 1) != 1) {
+				if (i == 0 && list.get(i) == 0 && list.get(i + 1) == 0) {
 					list.set(i, 1);
 				} else if (i == n && list.get(i) == 0 && list.get(i - 1) != 1) {
 					list.set(i, 1);
 				}
 			} else {
-				if (list.get(i) == 0 && list.get(i-1) != 1 && list.get(i+1) != 1) {
+				if (list.get(i) == 0 && list.get(i-1) == 0 && list.get(i+1) == 0) {
 					list.set(i, 1);
 				}
 			}
 		}
 	}
 
-	// int[] sortedArray = [1,2,5,8,13,16]
+	// int[] sortedArray = [1, 2, 5, 8, 13, 16]
 	// Write a function that returns the number of pairs such that x + y <= target
+	
 	public static int countPairs(int[] sortedArray, int target) {
 		int l = 0;
 		int r = sortedArray.length - 1;
@@ -385,38 +574,9 @@ public class TheDifference {
 		return str.charAt(str.length() - 1) + reverseString2(str.substring(0, str.length() - 1));
 	}
 
-	/*
-	 * Search an element in a sorted and rotated array
-	 *
-	 */
-	public static int searchSortedRotated(int[] a, int n, int x) {
-		int pivot = findPivot(a, 0, n - 1);
-		if (pivot == -1)
-			biSearchIter(a, 0, n - 1, x);
-		if (a[pivot] == x)
-			return pivot;
-		if (a[0] <= x)
-			return biSearchIter(a, 0, pivot - 1, x);
-		return biSearchIter(a, pivot + 1, n - 1, x);
-	}
+	
 
-	public static int findPivot(int[] a, int l, int r) {
-		if (r < l)
-			return -1;
-		if (l == r)
-			return l;
-
-		int mid = (l + r) / 2;
-		if (mid < r && a[mid] > a[mid + 1])
-			return mid;
-		if (mid > l && a[mid - 1] > a[mid])
-			return mid - 1;
-
-		if (a[l] >= a[mid])
-			return findPivot(a, l, mid - 1);
-
-		return findPivot(a, mid + 1, r);
-	}
+	
 
 	public static int biSearchIter(int[] a, int l, int r, int x) {
 		while (l <= r) {
@@ -568,6 +728,7 @@ public class TheDifference {
 		int r = l2 - 1;
 
 		int diff = Integer.MAX_VALUE;
+		
 		while (l < l1 && r > 0) {
 			if (Math.abs(a1[l] + a2[r] - x) < diff) {
 				diff = Math.abs(a1[l] + a2[r] - x);
@@ -630,7 +791,8 @@ public class TheDifference {
 		}
 
 	}
-
+	
+	
 	public static int partition(int[] a, int l, int r) {
 		int pivot = a[r];
 		int i = l;
@@ -657,6 +819,19 @@ public class TheDifference {
 		Arrays.sort(nums);
 		System.out.println(nums[k - 1]);
 	}
+
+	/*
+        Given two strings s and t which consist of only lowercase letters.
+        String t is generated by random shuffling string s and then add one more letter at a random position.
+        Find the letter that was added in t.
+        Input:
+        s = "abcd"
+        t = "abcde"
+        Output:
+        e
+        Explanation:
+        'e' is the letter that was added.
+	 */
 
 	public static char findTheDifference2(String s, String t) {
 		HashSet<Character> hSet = new HashSet<>();
